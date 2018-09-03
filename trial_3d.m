@@ -1,8 +1,6 @@
 clc 
 clear
 
-% changes in the master branch 
-
 % start to think about the grid. Start with thinking about the variables.
 %------------------------------------------------------------------------
 
