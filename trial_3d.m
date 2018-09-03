@@ -2,6 +2,7 @@ clc
 clear
 
 %test line 2
+% adding another test line
 
 % start to think about the grid. Start with thinking about the variables.
 %------------------------------------------------------------------------
@@ -170,4 +171,4 @@ plot(linex,middlefield)
 axis([-10^-3,10^-3,-2*10^-10,0])
 ylabel 'Field (T)'
 xlabel ' Distance from the particle (m)'
-title 'Field profile at a distance'
+title 'Field profile at a distance'%test line from gitbash
