@@ -1,9 +1,6 @@
 clc 
 clear
 
-%test line 2
-% adding another test line
-
 % start to think about the grid. Start with thinking about the variables.
 %------------------------------------------------------------------------
 
