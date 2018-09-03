@@ -1,6 +1,8 @@
 clc 
 clear
 
+% changes that have been made in the new branch test_branch
+
 % start to think about the grid. Start with thinking about the variables.
 %------------------------------------------------------------------------
 
