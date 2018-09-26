@@ -1,16 +1,20 @@
-clc 
+% clc 
 clear
+
+tic
 
 % start to think about the grid. Start with thinking about the variables.
 %------------------------------------------------------------------------
+
+mu0 = 4*pi*10^-7; % [H/m]
 
 rangex = 10^-3; % time/space limit in x [s] or [m]
 rangey = 10^-3; % time/space limit in y [s] or [m]
 rangez = 10^-3; % time/space limit in z [s] or [m]
 
-nx = 30; % number of cells to spread over in both positive and negative direction
-ny = 30;
-nz = 30;
+nx = 25; % number of cells to spread over in both positive and negative direction
+ny = 25;
+nz = 25;
 
 extra = 10^-10;
 
@@ -90,7 +94,11 @@ iFFTz = ifftn(fftZ,[mx,my,mz]);
 Xcomp = iFFTx(in(1):en(1),in(2):en(2),in(3):en(3)); 
 Ycomp = iFFTy(in(1):en(1),in(2):en(2),in(3):en(3)); 
 Zcomp = iFFTz(in(1):en(1),in(2):en(2),in(3):en(3));
+
+toc
 %%
+tic
+
 figure(n)
 clf
 
@@ -169,3 +177,5 @@ axis([-10^-3,10^-3,-2*10^-10,0])
 ylabel 'Field (T)'
 xlabel ' Distance from the particle (m)'
 title 'Field profile at a distance'%test line from gitbash
+
+toc
